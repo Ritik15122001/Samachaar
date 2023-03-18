@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Samachaar</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="samachaar">Samachaar</string>
+    <string name="todo">TODO</string>
+    <string name="all_news_channel_in_one_app">All News Channel In One App</string>
+    <string name="welcome">Welcome</string>
+    <string name="glad_to_see_you">Glad to See You</string>
+    <string name="password">Password</string>
+    <string name="email_id">Email Id</string>
+    <string name="login">Login</string>
+    <string name="login1">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="todo1">TODO</string>
+    <string name="signup_">Signup</string>
+    <string name="create_account">Create Account</string>
+    <string name="to_get_started_now">to get started now!</string>
+    <string name="email">Email</string>
+    <string name="password_">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="button">Button</string>
+</resources>
