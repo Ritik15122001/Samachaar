@@ -4,12 +4,14 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.webkit.WebView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.samachaar.R;
+import com.example.samachaar.WebviewController;
 import com.example.samachaar.databinding.FragmentGalleryBinding;
 
 public class GalleryFragment extends Fragment {
@@ -23,9 +25,10 @@ public class GalleryFragment extends Fragment {
 
         binding = FragmentGalleryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+        WebView webView = root.findViewById(R.id.WebView1);
+        webView.loadUrl("https://zeenews.india.com/");
+        webView.setWebViewClient(new WebviewController());
 
-        final TextView textView = binding.textGallery;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

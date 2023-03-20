@@ -4,12 +4,15 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.samachaar.R;
+import com.example.samachaar.WebviewController;
 import com.example.samachaar.databinding.FragmentSlideshowBinding;
 
 public class SlideshowFragment extends Fragment {
@@ -23,9 +26,9 @@ public class SlideshowFragment extends Fragment {
 
         binding = FragmentSlideshowBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
-        final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        WebView webView = root.findViewById(R.id.WebView2);
+        webView.loadUrl("https://www.bbc.com/hindi");
+        webView.setWebViewClient(new WebviewController());
         return root;
     }
 
