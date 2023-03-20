@@ -28,4 +28,11 @@
     <string name="password_">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="button">Button</string>
+    <string name="tod">TODO</string>
+    <string name="aajtak">AajTak</string>
+    <string name="zeenews">ZeeNews</string>
+    <string name="bbc">BBC</string>
+    <string name="aajtak_">AajTak</string>
+    <string name="zeenews_">ZeeNews</string>
+    <string name="bbc_">BBC</string>
 </resources>
