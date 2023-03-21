@@ -20,6 +20,7 @@ public class Onboarding extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Onboarding.this,LoginScreen.class);
                 startActivity(intent);
+                finish();
             }
         });
         button2 =(Button) findViewById(R.id.signup);
@@ -29,6 +30,7 @@ public class Onboarding extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Onboarding.this,Register.class);
                 startActivity(intent);
+                finish();
             }
         });
     }
