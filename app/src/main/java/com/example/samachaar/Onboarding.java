@@ -30,7 +30,7 @@ public class Onboarding extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Onboarding.this,Register.class);
                 startActivity(intent);
-                finish();
+
             }
         });
     }

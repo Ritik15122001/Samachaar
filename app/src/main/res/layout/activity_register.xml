@@ -62,21 +62,20 @@
         android:autofillHints="" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/lpassword"
         android:layout_width="287dp"
         android:layout_height="58dp"
-        android:layout_marginTop="51dp"
-        android:layout_marginBottom="97dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="296dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/password_"
         android:inputType="textPassword"
         android:textColorHint="#E3F2FD"
-        app:layout_constraintBottom_toTopOf="@+id/cnfpassword"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputEmail"
-        app:layout_constraintVertical_bias="0.083" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <EditText
         android:id="@+id/cnfpassword"
@@ -91,7 +90,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.701"
+        app:layout_constraintVertical_bias="0.731"
         tools:ignore="MissingConstraints" />
 
     <Button

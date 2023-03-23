@@ -35,4 +35,5 @@
     <string name="aajtak_">AajTak</string>
     <string name="zeenews_">ZeeNews</string>
     <string name="bbc_">BBC</string>
+    <string name="logout">Logout</string>
 </resources>

@@ -17,7 +17,6 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.ktx.Firebase;
 
 public class Register extends AppCompatActivity {
     Button Submit;
@@ -35,7 +34,7 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         Submit =(Button)  findViewById(R.id.buttonR);
         inputemail=findViewById(R.id.inputEmail);
-        inputpassword=findViewById(R.id.password);
+        inputpassword=findViewById(R.id.lpassword);
         inputcnfpassword=findViewById(R.id.cnfpassword);
         progressDialog = new ProgressDialog(this);
         mAuth = FirebaseAuth.getInstance();
@@ -80,7 +79,7 @@ public class Register extends AppCompatActivity {
                     if (task.isSuccessful()){
                         progressDialog.dismiss();
                         sendUserToNextActivity();
-                        Toast.makeText(Register.this,"Registration Success",Toast.LENGTH_SHORT);
+                        Toast.makeText(Register.this,"Registration Success",Toast.LENGTH_LONG);
                     }else {
                         progressDialog.dismiss();
                         Toast.makeText(Register.this,""+task.getException(),Toast.LENGTH_SHORT).show();
@@ -91,8 +90,9 @@ public class Register extends AppCompatActivity {
     }
 
     private void sendUserToNextActivity() {
-        Intent intent = new Intent(Register.this,MainActivity.class);
+        Intent intent = new Intent(Register.this,LoginScreen.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
+
     }
 }
