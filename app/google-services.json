@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "308225433895",
+    "project_id": "loginregister-cd1cf",
+    "storage_bucket": "loginregister-cd1cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308225433895:android:63d90832506da92a0d8902",
+        "android_client_info": {
+          "package_name": "com.example.samachaar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308225433895-2dpn72h8bd2po56elnfactlsv6ctgj0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7_RjMA0BtuUqzZ6OJW3sLYc2PoAOiCVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308225433895-2dpn72h8bd2po56elnfactlsv6ctgj0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
